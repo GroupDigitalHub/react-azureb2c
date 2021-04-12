@@ -3,18 +3,6 @@ import authentication from 'react-azure-b2c';
 import axios from 'axios';
 import Homepage from '../Homepage';
 
-const styles = {
-  root: {
-    height: '54px',
-    backgroundColor: '#fff',
-    width: '100%',
-    position: 'absolute',
-    top: '0px',
-    left: '0px',
-    boxShadow: '0px 0px 20px rgba(82, 97, 172, 0.24);'
-  }
-};
-
 export const Authenticate = () => {
   const [ userData, setUserData ] = useState(null);
   const token = authentication.getAccessToken();
