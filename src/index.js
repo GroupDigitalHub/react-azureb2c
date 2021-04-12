@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import authentication from 'react-azure-b2c';
 import './index.css';
-import Homepage from './components/Homepage';
+import Authenticate from './components/Authenticate';
 import reportWebVitals from './reportWebVitals';
 
 
@@ -20,7 +20,7 @@ authentication.initialize({
 authentication.run(()=>{
   ReactDOM.render(
     <React.StrictMode>
-      <Homepage />
+      <Authenticate />
     </React.StrictMode>,
     document.getElementById('root')
   );
