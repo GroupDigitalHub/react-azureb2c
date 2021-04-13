@@ -253,7 +253,7 @@ const data = [
 ];
 
 export const Homepage = props => {
-  const { classes } = props;
+  const { classes, content } = props;
   return (
       <div className={classes.root}>
           <Header />
@@ -262,7 +262,7 @@ export const Homepage = props => {
                 <Caption text="My Irish Life" />
                 <h2 className={classes.title}>Overview</h2>
             </div>
-            {data.map(({ id, status, body, label, title}) => (
+            {content && content.map(({ id, status, body, label, title}) => (
                 <div key={id} className={classes.container}>
                     <CollapsableContainer status={status} body={body} maxWidth={maxWidth} label={label} title={title} />
                 </div>
