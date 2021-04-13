@@ -17,7 +17,6 @@ export const Authenticate = () => {
         setApiReturned(true)
         const formattedUserData = formtUserData(data);
        setUserData(formattedUserData);
-       console.log('formattedUserData', formattedUserData);
     })
 }
   return (

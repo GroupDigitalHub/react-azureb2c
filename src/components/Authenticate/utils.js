@@ -29,8 +29,16 @@ export const formtUserData = data => {
                     }
                 },
                 {
-                    Component: Button,
+                    Component: CardData,
                     id: 3,
+                    props: {
+                        label: 'Names on Policy',
+                        data: element.holdings.holding.namesOnPolicy,
+                    }
+                },
+                {
+                    Component: Button,
+                    id: 4,
                     props: {
                         label: 'View details',
                         icon: "rightArrow",
